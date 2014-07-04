@@ -1,4 +1,4 @@
-# A sample Gemfile
-source "https://rubygems.org"
-
+source 'https://rubygems.org'
 gemspec
+
+gem 'sidekiq', ENV['SIDEKIQ_VERSION'] if ENV['SIDEKIQ_VERSION']
